@@ -32,6 +32,7 @@ We will use the [SMS Spam Collection dataset](https://www.kaggle.com/datasets/uc
 ### Project Requirements
 
 1. Data Exploration (EDA):
+
    - At minimum, include:
      - Dataset size (rows, columns)
      - How many spam vs. ham (counts + percentages)
@@ -40,6 +41,7 @@ We will use the [SMS Spam Collection dataset](https://www.kaggle.com/datasets/uc
        - message length
        - word counts
        - most common words (with caution about stopwords)
+
 2. Preprocessing:
 
    - At minimum:
@@ -78,6 +80,7 @@ We will use the [SMS Spam Collection dataset](https://www.kaggle.com/datasets/uc
      - Based on your results, would you deploy this model? Why or why not?
 
 5. Reflection / Communication
+
    - In your final markdown section:
      - Summarize your model performance in plain English
      - Suggest one realistic improvement you would try next
@@ -90,21 +93,31 @@ We will use the [SMS Spam Collection dataset](https://www.kaggle.com/datasets/uc
 ### Recommended Workflow (Suggested Notebook Structure)
 
 - Section A — Setup
+
   - Import libraries
   - Load the dataset
+
 - Section B — Quick EDA
+
   - class balance
   - example messages
   - message length stats
+
 - Section C — Train/Test Split
+
   - split into train and test
   - keep labels aligned
+
 - Section D — Vectorization
+
   - fit vectorizer on training text
   - transform training + test text
+
 - Section E — Baseline Model
+
   - majority class predictor
   - evaluate
+
 - Section F — ML Model(s)
   - train model
   - evaluate
