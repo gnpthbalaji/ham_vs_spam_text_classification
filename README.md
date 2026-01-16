@@ -33,13 +33,13 @@ By the end of this project, you should be able to:
 
     1 Data Exploration (EDA)
         At minimum, include:
-            Dataset size (rows, columns)
-            How many spam vs. ham (counts + percentages)
-            Example messages from each class (a few)
-            Any quick text stats you think are useful (optional)
-            message length
-            word counts
-            most common words (with caution about stopwords)
+            * Dataset size (rows, columns)
+            * How many spam vs. ham (counts + percentages)
+            * Example messages from each class (a few)
+            * Any quick text stats you think are useful (optional)
+            * message length
+            * word counts
+            * most common words (with caution about stopwords)
     2 Preprocessing
         At minimum:
             Handle missing values (if any)
