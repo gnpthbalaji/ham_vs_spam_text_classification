@@ -9,7 +9,6 @@
 - [Project Requirements](#project-requirements)
 - [Recommended Workflow](#recommended-workflow-suggested-notebook-structure)
 - [Stretch Goals](#stretch-goals-optional)
-- [EDA - Ham vs Spam](#eda---ham-vs-spam)
 - [Key Findings from EDA](#key-findings-from-eda)
 
 ### Notebook Links
