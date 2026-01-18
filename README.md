@@ -10,6 +10,7 @@
 - [Recommended Workflow](#recommended-workflow-suggested-notebook-structure)
 - [Stretch Goals](#stretch-goals-optional)
 - [Key Findings from EDA](#key-findings-from-eda)
+- [Key Findings from Model](#key-findings-from-model)
 
 ### Notebook Links
 
@@ -182,3 +183,56 @@ We will use the [SMS Spam Collection dataset](https://www.kaggle.com/datasets/uc
 
 - Correlation heatmap showing relationships between features and spam classification.
   ![Feature Correlation](results/figures/feature_correlation_heatmap.png)
+
+### Key Findings from Model
+
+1. Confusion Matrix - Baseline
+
+- The baseline always predicts 'ham' (majority class).This gives high accuracy due to class imbalance, but completely fails to detect any spam (recall = 0)
+  ![Confusion Matrix](results/figures/confusion_matrix_baseline.png)
+
+2. Confusion Matrix & ROC Curve - Logistic Regression
+
+- ![Confusion Matrix  - Logistic](results/figures/confusion_matrix_logistic.png)
+- ![ROC - Logistic](results/figures/roc_curve_logistic.png)
+
+3. Confusion Matrix & ROC Curve - Decision Tree
+
+- ![Confusion Matrix  - Decision Tree](results/figures/confusion_matrix_decision_tree.png)
+- ![ROC - Decisoin Tree](results/figures/roc_curve_decision_tree.png)
+
+4. Model Comparision
+
+- Best Model : Logistic Regression
+- Model Performance comparison
+  | Model Name | Accuracy | Precision | Recall | F1 Score | AUC |
+  | :--- | :---: | :---: | :---: | :---: | :---: |
+  | Baseline | 0.8655 | 0.0000 | 0.0000 | 0.0000 | NaN |
+  | Logistic Regression | 0.9830 | 0.9925 | 0.8800 | 0.9329 | 0.9847 |
+  | Decision Tree | 0.9785 | 0.9922 | 0.8467 | 0.9137 | 0.9101 |
+
+![Model Comparison](results/figures/model_comparison.png)
+
+5. Error Distribution
+   ![Error Distribtion - Logistic Regression](results/figures/error_distribution_lr.png)
+
+6. TF-IDF vs CountVectorizer
+
+- Comparison
+  | model_name | accuracy | precision | recall | f1_score | auc |
+  | :--- | :---: | :---: | :---: | :---: | :---: |
+  | LR + TF-IDF | 0.9830 | 0.9925 | 0.88 | 0.9329 | 0.9847 |
+  | LR + CountVectorizer | 0.9883 | 0.9928 | 0.92 | 0.9550 | 0.9863 |
+
+![TF-IDF vs CountVectorizer](results/figures/tfidf_vs_count_comparison.png)
+
+7. Unigram vs Bi-gram
+
+- Bigrams have **no significant impact**
+- Comparison
+  | model_name | accuracy | precision | recall | f1_score | auc |
+  | :--- | :---: | :---: | :---: | :---: | :---: |
+  | LR + Unigrams (1,1) | 0.983 | 0.9925 | 0.88 | 0.9329 | 0.9847 |
+  | LR + Bigrams (1,2) | 0.983 | 0.9925 | 0.88 | 0.9329 | 0.9846 |
+
+![Unigram vs Bigram](results/figures/unigrams_vs_bigrams_comparison.png)
