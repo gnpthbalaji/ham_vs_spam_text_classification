@@ -1,5 +1,17 @@
 # Project: Ham vs. Spam (Text Classification)
 
+## Table of Contents
+
+- [Notebook Links](#notebook-links)
+- [Overview](#overview)
+- [Learning Goals](#learning-goals)
+- [Dataset](#dataset)
+- [Project Requirements](#project-requirements)
+- [Recommended Workflow](#recommended-workflow-suggested-notebook-structure)
+- [Stretch Goals](#stretch-goals-optional)
+- [EDA - Ham vs Spam](#eda---ham-vs-spam)
+- [Key Findings from EDA](#key-findings-from-eda)
+
 ### Notebook Links
 
 - [EDA](./notebooks/01_ham_spam_eda.ipynb)
