@@ -1,5 +1,9 @@
 # Project: Ham vs. Spam (Text Classification)
 
+### Notebook Links
+
+- [EDA](./notebooks/01_ham_spam_eda.ipynb)
+
 ### Overview
 
 - In this project you will build a machine learning model that predicts whether a text message is ham (normal) or spam (unwanted/advertising/scam). This is one of the most common “real world” classification problems and is a great way to practice the full data science workflow.
@@ -32,7 +36,6 @@ We will use the [SMS Spam Collection dataset](https://www.kaggle.com/datasets/uc
 ### Project Requirements
 
 1. Data Exploration (EDA):
-
    - At minimum, include:
      - Dataset size (rows, columns)
      - How many spam vs. ham (counts + percentages)
@@ -43,7 +46,6 @@ We will use the [SMS Spam Collection dataset](https://www.kaggle.com/datasets/uc
        - most common words (with caution about stopwords)
 
 2. Preprocessing:
-
    - At minimum:
      - Handle missing values (if any)
      - Convert labels to numeric (spam = 1, ham = 0)
@@ -54,7 +56,6 @@ We will use the [SMS Spam Collection dataset](https://www.kaggle.com/datasets/uc
    - Important: Don’t overcomplicate preprocessing. The goal is to learn the workflow.
 
 3. Modeling
-
    - You must include:
      - A baseline model
      - Example: predict the majority class (“always ham”)
@@ -67,7 +68,6 @@ We will use the [SMS Spam Collection dataset](https://www.kaggle.com/datasets/uc
      - TfidfVectorizer (TF–IDF)
 
 4. Evaluation
-
    - You must report:
      - Confusion matrix
      - Precision
@@ -80,7 +80,6 @@ We will use the [SMS Spam Collection dataset](https://www.kaggle.com/datasets/uc
      - Based on your results, would you deploy this model? Why or why not?
 
 5. Reflection / Communication
-
    - In your final markdown section:
      - Summarize your model performance in plain English
      - Suggest one realistic improvement you would try next
@@ -93,28 +92,23 @@ We will use the [SMS Spam Collection dataset](https://www.kaggle.com/datasets/uc
 ### Recommended Workflow (Suggested Notebook Structure)
 
 - Section A — Setup
-
   - Import libraries
   - Load the dataset
 
 - Section B — Quick EDA
-
   - class balance
   - example messages
   - message length stats
 
 - Section C — Train/Test Split
-
   - split into train and test
   - keep labels aligned
 
 - Section D — Vectorization
-
   - fit vectorizer on training text
   - transform training + test text
 
 - Section E — Baseline Model
-
   - majority class predictor
   - evaluate
 
@@ -134,3 +128,47 @@ We will use the [SMS Spam Collection dataset](https://www.kaggle.com/datasets/uc
   - Try threshold tuning using predicted probabilities
   - Plot an ROC curve and discuss what it means
   - Inspect the most influential words (model interpretation)
+
+# EDA - Ham vs Spam
+
+### Key Findings from EDA
+
+1. Class Distribution
+
+- The dataset is imbalanced with more ham messages than spam.
+  ![Class Distribution](results/figures/class_distribution.png)
+
+2. Message Length Analysis
+
+- Spam messages tend to be longer than ham messages on average.
+  ![Message Length](results/figures/message_length_analysis.png)
+
+3. Word Count Distribution
+
+- Spam messages contain more words compared to legitimate messages.
+  ![Word Count](results/figures/word_count_analysis.png)
+
+4. Character Analysis
+
+- Spam uses more exclamation marks and has different capitalization patterns.
+  ![Character Analysis](results/figures/character_analysis.png)
+
+5. Pattern Detection
+
+- Spam messages are more likely to contain phone numbers, currency symbols, and URLs.
+  ![Pattern Detection](results/figures/special_patterns_analysis.png)
+
+6. Trigger Words
+
+- Money-related words, urgency words, and action words are strong spam indicators.
+  ![Trigger Words](results/figures/urgency_analysis.png)
+
+7. Word Clouds
+
+- Visual representation of most common words in ham vs spam messages.
+  ![Word Cloud](results/figures/wordcloud_ham_spam.png)
+
+8. Feature Correlation
+
+- Correlation heatmap showing relationships between features and spam classification.
+  ![Feature Correlation](results/figures/feature_correlation_heatmap.png)
