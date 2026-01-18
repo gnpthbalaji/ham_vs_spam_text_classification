@@ -1,0 +1,4 @@
+model_name,accuracy,precision,recall,f1_score,auc
+Baseline,0.8655,0.0,0.0,0.0,
+Logistic Regression,0.983,0.9925,0.88,0.9329,0.9847
+Decision Tree,0.9785,0.9922,0.8467,0.9137,0.9101
