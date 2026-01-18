@@ -13,7 +13,8 @@
 
 ### Notebook Links
 
-- [EDA](./notebooks/01_ham_spam_eda.ipynb)
+- [EDA - Ham vs Spam](./notebooks/01_ham_spam_eda.ipynb)
+- [Classification Model](./notebooks/02.ham_spam_main.ipynb)
 
 ### Overview
 
