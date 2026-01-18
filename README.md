@@ -141,8 +141,6 @@ We will use the [SMS Spam Collection dataset](https://www.kaggle.com/datasets/uc
   - Plot an ROC curve and discuss what it means
   - Inspect the most influential words (model interpretation)
 
-# EDA - Ham vs Spam
-
 ### Key Findings from EDA
 
 1. Class Distribution
