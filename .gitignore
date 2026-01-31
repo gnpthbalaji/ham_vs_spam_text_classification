@@ -37,16 +37,6 @@ ENV/
 *.swo
 *~
 
-# Data files (optional - uncomment if you don't want to track data)
-# data/raw/*.csv
-# data/processed/*.csv
-
-# Model files (optional - uncomment if models are too large)
-# models/*.pkl
-
-# Results
-# results/figures/*.png
-# results/metrics/*.csv
 
 # OS
 .DS_Store
